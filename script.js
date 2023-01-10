@@ -1,14 +1,14 @@
 `use strict`;
 
-const fibonacci = (n) => {
+const fib = (n = 1) => {
     if (n <= 1) {
         return n;
     }
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
+    return fib(n - 1) + fib(n - 2);
 }
 
-console.log(fibonacci(4));
-console.log(fibonacci(8));
-console.log(fibonacci(10));
-console.log(fibonacci(15));
+console.log(fib(4));
+console.log(fib(8));
+console.log(fib(10));
+console.log(fib(15));
